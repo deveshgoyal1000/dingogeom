@@ -19,7 +19,7 @@ metabolic network, namely Flux Balance Analysis and Flux Variability Analysis.
 
 To load the submodules that dingo uses, run
 
-````unix
+````Unix
 git submodule update --init
 ````
 
@@ -124,7 +124,7 @@ steady_states = sampler.generate_steady_states(ess=2000, psrf = True,
 
 The default option is to run the sequential [Multiphase Monte Carlo Sampling algorithm](https://arxiv.org/abs/2012.05503) (MMCS) algorithm.
 
-**Tip**: After the first run of MMCS algorithm the polytope stored in object `sampler` is usually more rounded than the initial one. Thus, the function `generate_steady_states()` becomes more efficient from run to run.
+**Tip**: After the first run of MMCS algorithm the polytope stored in the object `sampler` is usually more rounded than the initial one. Thus, the function `generate_steady_states()` becomes more efficient from run to run.
 
 
 #### Rounding the polytope
